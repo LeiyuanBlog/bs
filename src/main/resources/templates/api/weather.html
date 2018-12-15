@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>天气</title>
+    <!-- For-Mobile-Apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content=""/>
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script src="/js/weather.js"></script>
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all"/>
+    <!-- //Web-Fonts -->
+
+</head>
+
+<body onload="startTime()">
+
+<!-- Heading -->
+<h1>NEW YORK WEATHER WIDGET</h1>
+<!-- //Headng -->
+
+<!-- Container -->
+<div class="container">
+
+    <!-- City -->
+    <div class="city">
+        <div class="title" id="title">
+            <h2>中国</h2>
+            <input placeholder="请输入你想查询的城市名称" type="text" id="city"/>
+        </div>
+        <div class="date-time">
+            <div class="dmy">
+                <div id="txt"></div>
+                <div class="date">
+                    <!-- Date-JavaScript -->
+                    <script type="text/javascript">
+                        getDate();
+                    </script>
+                    <!-- //Date-JavaScript -->
+                </div>
+            </div>
+            <div class="temperature" id="today">
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- //City -->
+
+    <!-- Forecast -->
+    <div class="forecast">
+        <div class="forecast-icon">
+            <img src="/images/forecast.png" alt="New York Weather Widget"/>
+        </div>
+        <div class="today-weather" id="">
+            <h3 id="todayWeather"></h3>
+            <ul id="ulAll">
+            </ul>
+        </div>
+    </div>
+    <!-- //Forecast -->
+    <div class="clear"></div>
+
+</div>
+<!-- //Container -->
+<!-- Custom-JavaScript-Files -->
+
+<!-- Time-JavaScript -->
+<script>
+    startTime();
+    checkTime(i);
+</script>
+<!-- //Time-JavaScript -->
+
+<!-- //Custom-JavaScript-File-Links -->
+
+</body>
+
+</html>
+<script>
+    window.onload = getWeather();
+</script>
