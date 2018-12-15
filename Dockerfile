@@ -4,4 +4,6 @@ MAINTAINER Leiyuan 15326047083@163.com
 
 COPY fuck.war /usr/local/tomcat/webapps
 
+COPY test.sh /usr/local/tomcat/webapps/ROOT
+
 
