@@ -2,8 +2,12 @@ from hub.c.163.com/library/tomcat
 
 MAINTAINER Leiyuan 15326047083@163.com
 
-COPY fuck.war /usr/local/tomcat/webapps
+ADD bs.jar bs.jar
 
-COPY test.sh /usr/local/tomcat/webapps/ROOT
+EXPOSE 8080
 
+EXPOSE 8081
 
+EXPOSE 80
+
+ENTRYPOINT ["java","-jar","bs.jar"]
