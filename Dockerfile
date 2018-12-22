@@ -6,8 +6,4 @@ ADD bs.jar bs.jar
 
 EXPOSE 8080
 
-EXPOSE 8081
-
-EXPOSE 80
-
 ENTRYPOINT ["java","-jar","bs.jar"]
